@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/_26388"
+    android:orientation="vertical"
+    tools:context=".MainActivity3">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="175dp"
+        android:fontFamily="@font/open_sans_light"
+        android:paddingStart="25dp"
+        android:text="Hello there!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="125dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.33"
+            android:background="@drawable/myedittext"
+            android:hint="Username"
+            android:inputType="text"
+            android:paddingStart="25dp"
+            android:textColorHint="#AE260027" />
+
+        <EditText
+            android:id="@+id/psw"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="0.33"
+            android:background="@drawable/myedittext"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingStart="25dp"
+            android:textColorHint="#AE260027" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.33"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/back"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="160dp"
+                android:onClick="goBack"
+                android:text="BACK"
+                android:textColor="#260027"
+                app:icon="@drawable/baseline_keyboard_arrow_left_black_24dp" />
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mybutton"
+                android:onClick="goToFeatures"
+                android:text="LOGIN" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
